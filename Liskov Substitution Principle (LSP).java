@@ -1,18 +1,17 @@
-
 /*
- * Program Title: A JAVA program demonstrating Liskov Substitution Prinicple of SOLID.
+ * Program Title: A JAVA program demonstrating Liskov Substitution Principle of SOLID.
  * Author: Md. Habibur Rahman, CSEKU.
  */
 
 
- import java.util.*;
+import java.util.*;
 
-
-// User class
+// User class representing a generic user with name and email
 class User {
-    private String name;
-    private String email;
+    private String name; // Name of the user
+    private String email; // Email of the user
 
+    // Constructor to initialize a User object with name and email
     public User(String name, String email) {
         this.name = name;
         this.email = email;
@@ -39,12 +38,13 @@ class User {
     }
 }
 
-// LibraryUser class extending User with getter and setter methods
+// LibraryUser class extending User, representing a user of the library
 class LibraryUser extends User {
-    private int libraryId;
+    private int libraryId; // ID of the library user
 
+    // Constructor to initialize a LibraryUser object with name, email, and library ID
     public LibraryUser(String name, String email, int libraryId) {
-        super(name, email);
+        super(name, email); // Call the constructor of the superclass User
         this.libraryId = libraryId;
     }
 
@@ -59,12 +59,13 @@ class LibraryUser extends User {
     }
 }
 
-// LibraryAdmin class extending User with getter and setter methods
+// LibraryAdmin class extending User, representing an administrator of the library
 class LibraryAdmin extends User {
-    private boolean isAdmin;
+    private boolean isAdmin; // Flag indicating if the user is an admin
 
+    // Constructor to initialize a LibraryAdmin object with name, email, and admin status
     public LibraryAdmin(String name, String email, boolean isAdmin) {
-        super(name, email);
+        super(name, email); // Call the constructor of the superclass User
         this.isAdmin = isAdmin;
     }
 
