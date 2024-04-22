@@ -1,6 +1,6 @@
 
 /*
- * Program Title: A JAVA program demonstrating Single Responsibility Prinicple of SOLID.
+ * Program Title: A JAVA program demonstrating Interface Segmentation Prinicple of SOLID.
  * Author: Md. Habibur Rahman, CSEKU.
  */
 
