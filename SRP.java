@@ -1,46 +1,40 @@
-// Example: A Book class adhering to SRP
-
+// Book class
 class Book {
     private String title;
     private String author;
-    private String content;
+    private int yearPublished;
 
-    public Book(String title, String author, String content) {
+    public Book(String title, String author, int yearPublished) {
         this.title = title;
         this.author = author;
-        this.content = content;
+        this.yearPublished = yearPublished;
     }
 
-    // Getters and setters for title, author, and content
-
-    // Other methods related to book functionality (e.g., read, print, etc.)
+    // Getters and setters
 }
 
-class BookPrinter {
-    public void print(Book book) {
-        // Logic to print book details (title, author, etc.)
-        System.out.println("Printing book: " + book.getTitle());
-        // ...
+// BookManager class responsible for managing books
+class BookManager {
+    public void addBook(Book book) {
+        // Code to add book to library
     }
+
+    public void removeBook(Book book) {
+        // Code to remove book from library
+    }
+
+    // Other book management methods
 }
 
-class BookPersistence {
-    public void save(Book book) {
-        // Logic to save book to a database or file
-        // ...
+// UserManager class responsible for managing users
+class UserManager {
+    public void addUser(User user) {
+        // Code to add user to library system
     }
-}
 
-public class Main {
-    public static void main(String[] args) {
-        Book book = new Book("The Catcher in the Rye", "J.D. Salinger", "...");
-        
-        // BookPrinter handles printing responsibilities
-        BookPrinter printer = new BookPrinter();
-        printer.print(book);
-
-        // BookPersistence handles persistence responsibilities
-        BookPersistence persistence = new BookPersistence();
-        persistence.save(book);
+    public void removeUser(User user) {
+        // Code to remove user from library system
     }
+
+    // Other user management methods
 }
