@@ -1,4 +1,14 @@
-// Interface for BookFilter
+
+/*
+ * Program Title: A JAVA program demonstrating Single Responsibility Prinicple of SOLID.
+ * Author: Md. Habibur Rahman, CSEKU.
+ */
+
+
+ import java.util.*;
+ 
+ 
+ // Interface for BookFilter
 interface BookFilter {
     boolean apply(Book book);
 }
