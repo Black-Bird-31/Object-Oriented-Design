@@ -1,6 +1,9 @@
 /*
  * Program Title: A JAVA program demonstrating Open Closed Principle of SOLID.
  * Author: Md. Habibur Rahman, CSEKU.
+ 
+ OCP: The Open-Closed Principle (OCP) states that software entities should be open for extension but closed for modification. 
+ 
  */
 
 
@@ -86,3 +89,9 @@ class BookSearcher {
         return result;
     }
 }
+
+/*    The BookSearcher class is closed for modification and open for extension. 
+      If a new type of filter needs to be added (e.g., filtering books by publisher), 
+      it can be done without modifying the BookSearcher class.
+       
+*/
