@@ -1,6 +1,11 @@
 /*
  * Program Title: A JAVA program demonstrating Single Responsibility Principle (SRP) of SOLID.
  * Author: Md. Habibur Rahman, CSEKU.
+
+ 
+ SRP: The Single Responsibility Principle (SRP) states that a class should have only one reason to change, 
+ meaning it should have only one responsibility. 
+ 
  */
 
 import java.util.*;
@@ -48,6 +53,8 @@ class Book {
         this.yearPublished = yearPublished;
     }
 }
+// The Book class is responsible for representing the attributes of a book (title, author, and yearPublished).
+
 
 // BookManager class with methods to add or remove books
 class BookManager {
@@ -81,6 +88,7 @@ class BookManager {
         }
     }
 }
+    // The BookManager class is responsible for managing books in the library. It provides methods for adding, removing, and listing books.
 
 public class BookLibraryExample {
     public static void main(String[] args) {
@@ -105,3 +113,7 @@ public class BookLibraryExample {
         manager.listBooks();
     }
 }
+
+//The BookLibraryExample class is responsible for demonstrating the functionality of the Book and BookManager classes.
+
+
